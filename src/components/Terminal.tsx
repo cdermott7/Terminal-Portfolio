@@ -27,21 +27,23 @@ type Command = {
 }[];
 
 export const commands: Command = [
-  { cmd: "about", desc: "about Cole Dermott", tab: 8 },
-  { cmd: "clear", desc: "clear the terminal", tab: 8 },
-  { cmd: "echo", desc: "print out anything", tab: 9 },
-  { cmd: "education", desc: "my education background", tab: 4 },
-  { cmd: "email", desc: "send an email to me", tab: 8 },
-  { cmd: "gui", desc: "go to my portfolio in GUI", tab: 10 },
-  { cmd: "help", desc: "check available commands", tab: 9 },
-  { cmd: "history", desc: "view command history", tab: 6 },
-  { cmd: "projects", desc: "view projects that I've coded", tab: 5 },
-  { cmd: "pwd", desc: "print current working directory", tab: 10 },
-  { cmd: "socials", desc: "check out my social accounts", tab: 6 },
-  { cmd: "themes", desc: "check available themes", tab: 7 },
-  { cmd: "welcome", desc: "display hero section", tab: 6 },
-  { cmd: "whoami", desc: "about current user", tab: 7 },
-  { cmd: "techstack", desc: "my current tech stack", tab: 4 },
+  { cmd: "about", desc: "about Cole Dermott", tab: 10 },
+  { cmd: "clear", desc: "clear the terminal", tab: 10 },
+  { cmd: "echo", desc: "print out anything", tab: 11 },
+  { cmd: "education", desc: "my education background", tab: 6 },
+  { cmd: "email", desc: "send an email to me", tab: 10 },
+  { cmd: "gui", desc: "go to my portfolio in GUI", tab: 12 },
+  { cmd: "help", desc: "check available commands", tab: 11 },
+  { cmd: "history", desc: "view command history", tab: 8 },
+  { cmd: "projects", desc: "view projects that I've coded", tab: 7 },
+  { cmd: "pwd", desc: "print current working directory", tab: 12 },
+  { cmd: "socials", desc: "check out my social accounts", tab: 8 },
+  { cmd: "themes", desc: "check available themes", tab: 9 },
+  { cmd: "welcome", desc: "display hero section", tab: 8 },
+  { cmd: "whoami", desc: "about current user", tab: 9 },
+  { cmd: "techstack", desc: "my current tech stack", tab: 6 },
+  { cmd: "experience", desc: "my current professional experience", tab: 5},
+  { cmd: "extracurricular", desc: "extracurriculars i've been involved with", tab: 0}
 ];
 
 type Term = {

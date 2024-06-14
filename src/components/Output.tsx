@@ -12,6 +12,8 @@ import Projects from "./commands/Projects";
 import Socials from "./commands/Socials";
 import Themes from "./commands/Themes";
 import TechStack from "./commands/TechStack";
+import Experience from "./commands/Experience";
+import Extracurriculars from "./commands/Extracurriculars";
 import { OutputContainer, UsageDiv } from "./styles/Output.styled";
 import { termContext } from "./Terminal";
 import { useContext } from "react";
@@ -50,6 +52,8 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
           welcome: <Welcome />,
           techstack: <TechStack />,
           whoami: <GeneralOutput>visitor</GeneralOutput>,
+          experience: <Experience></Experience>,
+          extracurricular: <Extracurriculars></Extracurriculars>,
         }[cmd]
       }
     </OutputContainer>

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const EduIntro = styled.div`
+export const ExperiIntro = styled.div`
   margin-bottom: 0.75rem;
 `;
 
-export const EduList = styled.div`
+export const ExperiList = styled.div`
   margin-bottom: 1rem;
 
   .title {
@@ -13,6 +13,14 @@ export const EduList = styled.div`
   }
 
   .desc {
+    color: ${({ theme }) => theme.colors?.text[200]};
+  }
+
+  .role {
+    color: ${({ theme }) => theme.colors?.text[200]};
+  }
+
+  .skills {
     color: ${({ theme }) => theme.colors?.text[200]};
   }
 }
