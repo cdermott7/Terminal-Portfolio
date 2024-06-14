@@ -14,6 +14,7 @@ import Themes from "./commands/Themes";
 import TechStack from "./commands/TechStack";
 import Experience from "./commands/Experience";
 import Extracurriculars from "./commands/Extracurriculars";
+import Awards from "./commands/Awards";
 import { OutputContainer, UsageDiv } from "./styles/Output.styled";
 import { termContext } from "./Terminal";
 import { useContext } from "react";
@@ -54,6 +55,7 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
           whoami: <GeneralOutput>visitor</GeneralOutput>,
           experience: <Experience></Experience>,
           extracurricular: <Extracurriculars></Extracurriculars>,
+          awards: <Awards></Awards>,
         }[cmd]
       }
     </OutputContainer>

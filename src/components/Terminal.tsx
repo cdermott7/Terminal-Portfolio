@@ -43,7 +43,8 @@ export const commands: Command = [
   { cmd: "whoami", desc: "about current user", tab: 9 },
   { cmd: "techstack", desc: "my current tech stack", tab: 6 },
   { cmd: "experience", desc: "my current professional experience", tab: 5},
-  { cmd: "extracurricular", desc: "extracurriculars i've been involved with", tab: 0}
+  { cmd: "extracurricular", desc: "extracurriculars i've been involved with", tab: 0},
+  { cmd: "awards", desc: "award acknowledgements i've received", tab: 9}
 ];
 
 type Term = {
