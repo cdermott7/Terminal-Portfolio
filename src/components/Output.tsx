@@ -15,6 +15,8 @@ import TechStack from "./commands/TechStack";
 import Experience from "./commands/Experience";
 import Extracurriculars from "./commands/Extracurriculars";
 import Awards from "./commands/Awards";
+import LinkedIn from "./commands/Linkedin";
+import Languages from "./commands/Languages";
 import { OutputContainer, UsageDiv } from "./styles/Output.styled";
 import { termContext } from "./Terminal";
 import { useContext } from "react";
@@ -56,6 +58,8 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
           experience: <Experience></Experience>,
           extracurricular: <Extracurriculars></Extracurriculars>,
           awards: <Awards></Awards>,
+          languages: <Languages></Languages>,
+          linkedin: <LinkedIn></LinkedIn>,
         }[cmd]
       }
     </OutputContainer>
