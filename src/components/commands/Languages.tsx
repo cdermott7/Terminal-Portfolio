@@ -4,7 +4,7 @@ import { Wrapper } from "../styles/Output.styled";
 const Languages: React.FC = () => {
   return (
     <Wrapper data-testid="awards">
-      <EduIntro>Here are my award recognitions!</EduIntro>
+      <EduIntro>Here are my spoken languages!</EduIntro>
       {eduBg.map(({ title, desc}) => (
         <EduList key={title}>
           <div className="title">{title}</div>
