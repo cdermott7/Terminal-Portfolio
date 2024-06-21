@@ -101,6 +101,54 @@ const theme: Themes = {
       },
     },
   },
+  "florent-flows": {
+    id: "T_005",
+    name: "florent-flows",
+    colors: {
+      body: "#3D405B",
+      scrollHandle: "#2E2E2E",
+      scrollHandleHover: "#414141",
+      primary: "#F4F1DE",
+      secondary: "#81B29A",
+      text: {
+        100: "#F2CC8F",
+        200: "#04A5B2",
+        300: "#E50101",
+      },
+    },
+  },
+  "mario": {
+    id: "T_005",
+    name: "mario",
+    colors: {
+      body: "#F096BE",
+      scrollHandle: "#08A936",
+      scrollHandleHover: "#414141",
+      primary: "#08A936",
+      secondary: "#F8BE10",
+      text: {
+        100: "#E0102F",
+        200: "#04A5B2",
+        300: "#E50101",
+      },
+    },
+  },
+  "one-piece": {
+    id: "T_005",
+    name: "one-piece",
+    colors: {
+      body: "#657CDB",
+      scrollHandle: "#08A936",
+      scrollHandleHover: "#414141",
+      primary: "#F2BD93",
+      secondary: "#F8BE10",
+      text: {
+        100: "#972525",
+        200: "#EBD138",
+        300: "#E50101",
+      },
+    },
+  },
 };
 
 export default theme;
