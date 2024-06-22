@@ -53,11 +53,13 @@ const Chat: React.FC<ChatProps> = ({ onChatEnd }) => {
         model: "gpt-3.5-turbo",
       });
       const response = completion.choices[0].message.content;
-      const botMessage = response;
-      setMessages(prevMessages => [
-        ...prevMessages,
-        { user: userMessage, bot: botMessage },
-      ]);
+      if (response != null) {
+        const botMessage = response.toString();
+        setMessages(prevMessages => [
+          ...prevMessages,
+          { user: userMessage, bot: botMessage },
+        ]);
+      }
     } catch (error) {
       console.error("Error communicating with ChatGPT:", error);
       setMessages(prevMessages => [
