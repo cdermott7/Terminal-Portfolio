@@ -117,7 +117,7 @@ const theme: Themes = {
       },
     },
   },
-  "mario": {
+  mario: {
     id: "T_005",
     name: "mario",
     colors: {
@@ -144,6 +144,22 @@ const theme: Themes = {
       secondary: "#F8BE10",
       text: {
         100: "#972525",
+        200: "#EBD138",
+        300: "#E50101",
+      },
+    },
+  },
+  "canada-but-too-red": {
+    id: "T_005",
+    name: "canada-but-too-red",
+    colors: {
+      body: "#E60013",
+      scrollHandle: "#08A936",
+      scrollHandleHover: "#414141",
+      primary: "#AADACA",
+      secondary: "#F4D2D8",
+      text: {
+        100: "#89DDF5",
         200: "#EBD138",
         300: "#E50101",
       },

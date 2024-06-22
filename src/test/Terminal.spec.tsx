@@ -219,7 +219,7 @@ describe("Terminal Component", () => {
   describe("Keyboard shortcuts", () => {
     allCmds.forEach(cmd => {
       it(`should autocomplete '${cmd}' when 'Tab' is pressed`, async () => {
-        await user.type(terminalInput, cmd.slice(0, 2));
+        await user.type(terminalInput, cmd.slice(0, 3));
         await user.tab();
         expect(terminalInput.value).toBe(cmd);
       });
@@ -227,7 +227,7 @@ describe("Terminal Component", () => {
 
     allCmds.forEach(cmd => {
       it(`should autocomplete '${cmd}' when 'Ctrl + i' is pressed`, async () => {
-        await user.type(terminalInput, cmd.slice(0, 2));
+        await user.type(terminalInput, cmd.slice(0, 3));
         await user.keyboard("{Control>}i{/Control}");
         expect(terminalInput.value).toBe(cmd);
       });

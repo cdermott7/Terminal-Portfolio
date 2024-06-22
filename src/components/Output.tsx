@@ -18,9 +18,12 @@ import Awards from "./commands/Awards";
 import LinkedIn from "./commands/Linkedin";
 import Languages from "./commands/Languages";
 import CatImage from "./commands/CatImage";
+import Chat from "./commands/Chat";
+import ColeDermott from "./commands/ColeDermott";
+import Ls from "./commands/Ls";
 import { OutputContainer, UsageDiv } from "./styles/Output.styled";
 import { termContext } from "./Terminal";
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 
 type Props = {
   index: number;
@@ -36,6 +39,28 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
   // eg: about tt
   if (!specialCmds.includes(cmd) && arg.length > 0)
     return <UsageDiv data-testid="usage-output">Usage: {cmd}</UsageDiv>;
+
+  const [isChatting, setIsChatting] = useState(cmd === "chat");
+  const [chatClosed, setChatClosed] = useState(cmd === "chat");
+
+  const handleChatEnd = () => {
+    setIsChatting(false);
+    setChatClosed(true);
+  };
+
+  useEffect(() => {
+    if (cmd === "chat" && !chatClosed) {
+      setIsChatting(true);
+    } else {
+      setIsChatting(false);
+    }
+  }, [cmd, chatClosed]);
+
+  useEffect(() => {
+    if (cmd === "chat") {
+      setChatClosed(false);
+    }
+  }, [cmd]);
 
   return (
     <OutputContainer data-testid={index === 0 ? "latest-output" : null}>
@@ -62,6 +87,9 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
           languages: <Languages></Languages>,
           linkedin: <LinkedIn></LinkedIn>,
           cat: <CatImage></CatImage>,
+          chat: isChatting ? <Chat onChatEnd={handleChatEnd} /> : null,
+          cd: <ColeDermott></ColeDermott>,
+          ls: <Ls></Ls>,
         }[cmd]
       }
     </OutputContainer>

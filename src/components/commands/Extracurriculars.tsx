@@ -1,11 +1,11 @@
 import { ExperiIntro, ExperiList } from "../styles/Experience.styled";
 import { Wrapper } from "../styles/Output.styled";
 
-const Experience: React.FC = () => {
+const Extracurriculars: React.FC = () => {
   return (
     <Wrapper data-testid="extracurriculars">
       <ExperiIntro>Here is my extracurricular involvement!</ExperiIntro>
-      {experiBg.map(({ title, desc, role}) => (
+      {experiBg.map(({ title, desc, role }) => (
         <ExperiList key={title}>
           <div className="title">{title}</div>
           <div className="desc">{desc}</div>
@@ -59,4 +59,4 @@ const experiBg = [
   },
 ];
 
-export default Experience;
+export default Extracurriculars;

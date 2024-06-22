@@ -42,12 +42,19 @@ export const commands: Command = [
   { cmd: "welcome", desc: "display hero section", tab: 8 },
   { cmd: "whoami", desc: "about current user", tab: 9 },
   { cmd: "techstack", desc: "my current tech stack", tab: 6 },
-  { cmd: "experience", desc: "my current professional experience", tab: 5},
-  { cmd: "extracurricular", desc: "extracurriculars i've been involved with", tab: 0},
-  { cmd: "awards", desc: "award acknowledgements i've received", tab: 9},
+  { cmd: "experience", desc: "my current professional experience", tab: 5 },
+  {
+    cmd: "extracurricular",
+    desc: "extracurriculars i've been involved with",
+    tab: 0,
+  },
+  { cmd: "awards", desc: "award acknowledgements i've received", tab: 9 },
   { cmd: "languages", desc: "current languages i speak", tab: 6 },
   { cmd: "linkedin", desc: "my linkedin profile", tab: 7 },
-  { cmd: "cat", desc: "my cat, luffy! he's 3 and a maine coon", tab: 12}
+  { cmd: "cat", desc: "my cat, luffy! he's 3 and a maine coon", tab: 12 },
+  { cmd: "chat", desc: "prompt and chat with chatgpt!", tab: 11 },
+  { cmd: "cd", desc: "cole dermott. displays my resume.", tab: 13 },
+  { cmd: "ls", desc: "lists my contact information.", tab: 13 },
 ];
 
 type Term = {
