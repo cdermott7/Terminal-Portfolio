@@ -15,8 +15,10 @@ const Chat: React.FC<ChatProps> = ({ onChatEnd }) => {
     setInput(e.target.value);
   };
 
+  const apiKeyTemp = process.env.OPEN_API_KEY;
+
   const myOpenAi = new OpenAI({
-    apiKey: "sk-proj-iwR21KtuCshgIjQZYg6xT3BlbkFJkFRMk9K3ByQX4cU305lc",
+    apiKey: apiKeyTemp,
     dangerouslyAllowBrowser: true,
   });
 
